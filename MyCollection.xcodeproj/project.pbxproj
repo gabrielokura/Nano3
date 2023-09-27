@@ -11,6 +11,15 @@
 		7CE659EB2AC384BB00D5847D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE659EA2AC384BB00D5847D /* ContentView.swift */; };
 		7CE659ED2AC384BC00D5847D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659EC2AC384BC00D5847D /* Assets.xcassets */; };
 		7CE659F02AC384BC00D5847D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659EF2AC384BC00D5847D /* Preview Assets.xcassets */; };
+		7CE659F72AC384F100D5847D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659F62AC384F100D5847D /* README.md */; };
+		7CE659F92AC3895700D5847D /* BetterRest.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659F82AC3895700D5847D /* BetterRest.mlproj */; };
+		7CE659FD2AC38C3600D5847D /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE659FC2AC38C3600D5847D /* BetterRestView.swift */; };
+		7CE659FF2AC3B35500D5847D /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CE659FE2AC3B35500D5847D /* SleepCalculator.mlmodel */; };
+		7CE65A012AC4572A00D5847D /* DresserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A002AC4572A00D5847D /* DresserView.swift */; };
+		7CE65A032AC4688100D5847D /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A022AC4688100D5847D /* CollectionView.swift */; };
+		7CE65A052AC46A3300D5847D /* ClothingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A042AC46A3300D5847D /* ClothingModel.swift */; };
+		7CE65A072AC46B4D00D5847D /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A062AC46B4D00D5847D /* CollectionViewModel.swift */; };
+		7CE65A092AC4719200D5847D /* ClothingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A082AC4719200D5847D /* ClothingListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		7CE659EA2AC384BB00D5847D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CE659EC2AC384BC00D5847D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CE659EF2AC384BC00D5847D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CE659F62AC384F100D5847D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7CE659F82AC3895700D5847D /* BetterRest.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BetterRest.mlproj; sourceTree = "<group>"; };
+		7CE659FC2AC38C3600D5847D /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
+		7CE659FE2AC3B35500D5847D /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		7CE65A002AC4572A00D5847D /* DresserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DresserView.swift; sourceTree = "<group>"; };
+		7CE65A022AC4688100D5847D /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		7CE65A042AC46A3300D5847D /* ClothingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingModel.swift; sourceTree = "<group>"; };
+		7CE65A062AC46B4D00D5847D /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		7CE65A082AC4719200D5847D /* ClothingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,7 @@
 		7CE659DC2AC384BB00D5847D = {
 			isa = PBXGroup;
 			children = (
+				7CE659F62AC384F100D5847D /* README.md */,
 				7CE659E72AC384BB00D5847D /* MyCollection */,
 				7CE659E62AC384BB00D5847D /* Products */,
 			);
@@ -51,10 +70,18 @@
 		7CE659E72AC384BB00D5847D /* MyCollection */ = {
 			isa = PBXGroup;
 			children = (
+				7CE659FE2AC3B35500D5847D /* SleepCalculator.mlmodel */,
+				7CE659F82AC3895700D5847D /* BetterRest.mlproj */,
 				7CE659E82AC384BB00D5847D /* MyCollectionApp.swift */,
 				7CE659EA2AC384BB00D5847D /* ContentView.swift */,
 				7CE659EC2AC384BC00D5847D /* Assets.xcassets */,
 				7CE659EE2AC384BC00D5847D /* Preview Content */,
+				7CE659FC2AC38C3600D5847D /* BetterRestView.swift */,
+				7CE65A002AC4572A00D5847D /* DresserView.swift */,
+				7CE65A022AC4688100D5847D /* CollectionView.swift */,
+				7CE65A042AC46A3300D5847D /* ClothingModel.swift */,
+				7CE65A062AC46B4D00D5847D /* CollectionViewModel.swift */,
+				7CE65A082AC4719200D5847D /* ClothingListView.swift */,
 			);
 			path = MyCollection;
 			sourceTree = "<group>";
@@ -125,8 +152,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE659F72AC384F100D5847D /* README.md in Resources */,
 				7CE659F02AC384BC00D5847D /* Preview Assets.xcassets in Resources */,
 				7CE659ED2AC384BC00D5847D /* Assets.xcassets in Resources */,
+				7CE659F92AC3895700D5847D /* BetterRest.mlproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE65A052AC46A3300D5847D /* ClothingModel.swift in Sources */,
+				7CE65A032AC4688100D5847D /* CollectionView.swift in Sources */,
 				7CE659EB2AC384BB00D5847D /* ContentView.swift in Sources */,
+				7CE65A012AC4572A00D5847D /* DresserView.swift in Sources */,
+				7CE65A092AC4719200D5847D /* ClothingListView.swift in Sources */,
+				7CE65A072AC46B4D00D5847D /* CollectionViewModel.swift in Sources */,
+				7CE659FD2AC38C3600D5847D /* BetterRestView.swift in Sources */,
+				7CE659FF2AC3B35500D5847D /* SleepCalculator.mlmodel in Sources */,
 				7CE659E92AC384BB00D5847D /* MyCollectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -280,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
