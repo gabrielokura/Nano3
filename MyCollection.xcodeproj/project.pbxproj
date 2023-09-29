@@ -7,36 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C7C43F82AC6EC2A0069EC51 /* SUIImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C43F72AC6EC2A0069EC51 /* SUIImagePickerView.swift */; };
+		7C7C43FE2AC7527D0069EC51 /* DresserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C43FD2AC7527D0069EC51 /* DresserViewModel.swift */; };
 		7CE659E92AC384BB00D5847D /* MyCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE659E82AC384BB00D5847D /* MyCollectionApp.swift */; };
 		7CE659EB2AC384BB00D5847D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE659EA2AC384BB00D5847D /* ContentView.swift */; };
 		7CE659ED2AC384BC00D5847D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659EC2AC384BC00D5847D /* Assets.xcassets */; };
 		7CE659F02AC384BC00D5847D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659EF2AC384BC00D5847D /* Preview Assets.xcassets */; };
 		7CE659F72AC384F100D5847D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659F62AC384F100D5847D /* README.md */; };
-		7CE659F92AC3895700D5847D /* BetterRest.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = 7CE659F82AC3895700D5847D /* BetterRest.mlproj */; };
-		7CE659FD2AC38C3600D5847D /* BetterRestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE659FC2AC38C3600D5847D /* BetterRestView.swift */; };
-		7CE659FF2AC3B35500D5847D /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CE659FE2AC3B35500D5847D /* SleepCalculator.mlmodel */; };
 		7CE65A012AC4572A00D5847D /* DresserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A002AC4572A00D5847D /* DresserView.swift */; };
 		7CE65A032AC4688100D5847D /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A022AC4688100D5847D /* CollectionView.swift */; };
 		7CE65A052AC46A3300D5847D /* ClothingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A042AC46A3300D5847D /* ClothingModel.swift */; };
 		7CE65A072AC46B4D00D5847D /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A062AC46B4D00D5847D /* CollectionViewModel.swift */; };
 		7CE65A092AC4719200D5847D /* ClothingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A082AC4719200D5847D /* ClothingListView.swift */; };
+		7CE65A0B2AC5A66400D5847D /* ClothesClassifier.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = 7CE65A0A2AC5A66300D5847D /* ClothesClassifier.mlproj */; };
+		7CE65A0D2AC5C53300D5847D /* ClothesClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CE65A0C2AC5C53300D5847D /* ClothesClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C7C43F72AC6EC2A0069EC51 /* SUIImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIImagePickerView.swift; sourceTree = "<group>"; };
+		7C7C43FD2AC7527D0069EC51 /* DresserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DresserViewModel.swift; sourceTree = "<group>"; };
 		7CE659E52AC384BB00D5847D /* MyCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE659E82AC384BB00D5847D /* MyCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionApp.swift; sourceTree = "<group>"; };
 		7CE659EA2AC384BB00D5847D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CE659EC2AC384BC00D5847D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CE659EF2AC384BC00D5847D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CE659F62AC384F100D5847D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7CE659F82AC3895700D5847D /* BetterRest.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BetterRest.mlproj; sourceTree = "<group>"; };
-		7CE659FC2AC38C3600D5847D /* BetterRestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestView.swift; sourceTree = "<group>"; };
-		7CE659FE2AC3B35500D5847D /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		7CE65A002AC4572A00D5847D /* DresserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DresserView.swift; sourceTree = "<group>"; };
 		7CE65A022AC4688100D5847D /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		7CE65A042AC46A3300D5847D /* ClothingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingModel.swift; sourceTree = "<group>"; };
 		7CE65A062AC46B4D00D5847D /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 		7CE65A082AC4719200D5847D /* ClothingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingListView.swift; sourceTree = "<group>"; };
+		7CE65A0A2AC5A66300D5847D /* ClothesClassifier.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ClothesClassifier.mlproj; sourceTree = "<group>"; };
+		7CE65A0C2AC5C53300D5847D /* ClothesClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ClothesClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C7C43FA2AC6EC9D0069EC51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CE65A002AC4572A00D5847D /* DresserView.swift */,
+				7CE65A082AC4719200D5847D /* ClothingListView.swift */,
+				7CE65A022AC4688100D5847D /* CollectionView.swift */,
+				7C7C43F72AC6EC2A0069EC51 /* SUIImagePickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C7C43FB2AC6ECB20069EC51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CE65A042AC46A3300D5847D /* ClothingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C7C43FC2AC6ECBA0069EC51 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7CE65A062AC46B4D00D5847D /* CollectionViewModel.swift */,
+				7C7C43FD2AC7527D0069EC51 /* DresserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		7CE659DC2AC384BB00D5847D = {
 			isa = PBXGroup;
 			children = (
@@ -70,18 +100,15 @@
 		7CE659E72AC384BB00D5847D /* MyCollection */ = {
 			isa = PBXGroup;
 			children = (
-				7CE659FE2AC3B35500D5847D /* SleepCalculator.mlmodel */,
-				7CE659F82AC3895700D5847D /* BetterRest.mlproj */,
+				7C7C43FC2AC6ECBA0069EC51 /* ViewModels */,
+				7C7C43FB2AC6ECB20069EC51 /* Models */,
+				7C7C43FA2AC6EC9D0069EC51 /* Views */,
+				7CE65A0C2AC5C53300D5847D /* ClothesClassifier.mlmodel */,
+				7CE65A0A2AC5A66300D5847D /* ClothesClassifier.mlproj */,
 				7CE659E82AC384BB00D5847D /* MyCollectionApp.swift */,
 				7CE659EA2AC384BB00D5847D /* ContentView.swift */,
 				7CE659EC2AC384BC00D5847D /* Assets.xcassets */,
 				7CE659EE2AC384BC00D5847D /* Preview Content */,
-				7CE659FC2AC38C3600D5847D /* BetterRestView.swift */,
-				7CE65A002AC4572A00D5847D /* DresserView.swift */,
-				7CE65A022AC4688100D5847D /* CollectionView.swift */,
-				7CE65A042AC46A3300D5847D /* ClothingModel.swift */,
-				7CE65A062AC46B4D00D5847D /* CollectionViewModel.swift */,
-				7CE65A082AC4719200D5847D /* ClothingListView.swift */,
 			);
 			path = MyCollection;
 			sourceTree = "<group>";
@@ -154,8 +181,8 @@
 			files = (
 				7CE659F72AC384F100D5847D /* README.md in Resources */,
 				7CE659F02AC384BC00D5847D /* Preview Assets.xcassets in Resources */,
+				7CE65A0B2AC5A66400D5847D /* ClothesClassifier.mlproj in Resources */,
 				7CE659ED2AC384BC00D5847D /* Assets.xcassets in Resources */,
-				7CE659F92AC3895700D5847D /* BetterRest.mlproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +199,9 @@
 				7CE65A012AC4572A00D5847D /* DresserView.swift in Sources */,
 				7CE65A092AC4719200D5847D /* ClothingListView.swift in Sources */,
 				7CE65A072AC46B4D00D5847D /* CollectionViewModel.swift in Sources */,
-				7CE659FD2AC38C3600D5847D /* BetterRestView.swift in Sources */,
-				7CE659FF2AC3B35500D5847D /* SleepCalculator.mlmodel in Sources */,
+				7C7C43F82AC6EC2A0069EC51 /* SUIImagePickerView.swift in Sources */,
+				7C7C43FE2AC7527D0069EC51 /* DresserViewModel.swift in Sources */,
+				7CE65A0D2AC5C53300D5847D /* ClothesClassifier.mlmodel in Sources */,
 				7CE659E92AC384BB00D5847D /* MyCollectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var collectionViewModel = CollectionViewModel()
+    @StateObject var dresserViewModel = DresserViewModel()
     
     var body: some View {
         NavigationStack {
@@ -16,6 +17,7 @@ struct ContentView: View {
                 .preferredColorScheme(.dark)
         }
         .environmentObject(collectionViewModel)
+        .environmentObject(dresserViewModel)
     }
 }
 
