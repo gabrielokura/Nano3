@@ -18,6 +18,8 @@ struct ClothingModel: Codable, Hashable {
 
 extension ClothingModel {
     static var clothesCacheKey = "clothes_nano3_key"
+    static var upperCacheKey = "upper_nano3_key"
+    static var downCacheKey = "down_nano3_key"
 }
 
 extension UIImage {

@@ -9,7 +9,11 @@ import SwiftUI
 
 struct CollectionView: View {
     @EnvironmentObject var viewModel: CollectionViewModel
+    @EnvironmentObject var dresserViewModel: DresserViewModel
+    
     var type: ClothingType
+    
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack {
@@ -18,7 +22,10 @@ struct CollectionView: View {
                 ProgressView()
                     .padding(20)
             case .loaded(let clothes):
-                ClothingListView(clothes: clothes)
+                ClothingListView(clothes: clothes) { name in
+                    dresserViewModel.saveUserClothing(name, type: type)
+                    dismiss()
+                }
             }
             
         }

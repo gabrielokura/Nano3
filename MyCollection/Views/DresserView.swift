@@ -25,20 +25,18 @@ struct DresserView: View {
                     NavigationLink {
                         CollectionView(type: .superiores)
                     } label: {
-                        DressSelectionButton(title: "Superiores", selectedDress: "Camiseta Vermelha")
+                        DressSelectionButton(title: "Superiores", selectedDress: viewModel.selectedUpperClothing)
                     }
                     
                     NavigationLink {
                         CollectionView(type: .inferiores)
                     } label: {
-                        DressSelectionButton(title: "Inferiores", selectedDress: nil)
+                        DressSelectionButton(title: "Inferiores", selectedDress: viewModel.selectedDownClothing)
                     }
                 } header: {
                     Text("Peças de roupas atuais")
                         .textCase(.uppercase)
                 }
-                
-                
                 
                 if let selectedImage {
                     VStack {
@@ -93,6 +91,11 @@ struct DresserView: View {
                         
                         collectionViewModel.addClothesToTheCloset(image: image, classification: classification)
                         
+                        withAnimation {
+                            selectedPhoto = nil
+                            selectedImage = nil
+                        }
+                        
                     } label: {
                         Text("Adicionar")
                     }
@@ -109,6 +112,9 @@ struct DresserView: View {
                 selectedImage = image
                 viewModel.classifyImage(image)
             }
+        }
+        .onAppear {
+            viewModel.loadUsedClothes()
         }
     }
 }

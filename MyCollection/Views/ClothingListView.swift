@@ -10,10 +10,15 @@ import SwiftUI
 struct ClothingListView: View {
     let clothes: [ClothingModel]
     
+    let callback: (String) -> Void
+    
     var body: some View {
         VStack {
             ForEach(clothes, id: \.self) { clothing in
                 ClothingCardView(clothing: clothing, isSelected: true)
+                    .onTapGesture {
+                        callback(clothing.name)
+                    }
             }
             
             Spacer()
@@ -48,6 +53,6 @@ struct ClothingCardView: View {
 }
 
 #Preview {
-    ClothingListView(clothes: [ClothingModel(name: "Camiseta", image: UIImage(systemName: "plus")!.data!)])
+    ClothingListView(clothes: [ClothingModel(name: "Camiseta", image: UIImage(systemName: "plus")!.data!)], callback: {_ in })
         .preferredColorScheme(.dark)
 }

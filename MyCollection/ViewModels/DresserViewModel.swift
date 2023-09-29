@@ -17,6 +17,9 @@ class DresserViewModel: ObservableObject {
     
     @Published var state: State = .classifying
     
+    @Published var selectedUpperClothing: String = ""
+    @Published var selectedDownClothing: String = ""
+    
     func classifyImage(_ image: UIImage) {
         self.state = .classifying
         
@@ -70,5 +73,20 @@ class DresserViewModel: ObservableObject {
 //        for classification in results {
 //            print(classification.identifier, classification.confidence)
 //        }
+    }
+    
+    func loadUsedClothes() {
+        selectedUpperClothing  = UserDefaults.standard.string(forKey: ClothingModel.upperCacheKey) ?? ""
+        selectedDownClothing  = UserDefaults.standard.string(forKey: ClothingModel.downCacheKey) ?? ""
+    }
+    
+    func saveUserClothing(_ name: String, type: ClothingType) {
+        if type == .superiores {
+            UserDefaults.standard.setValue(name, forKey: ClothingModel.upperCacheKey)
+            selectedUpperClothing = name
+        } else {
+            UserDefaults.standard.setValue(name, forKey: ClothingModel.downCacheKey)
+            selectedDownClothing = name
+        }
     }
 }
