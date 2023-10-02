@@ -10,14 +10,36 @@ import SwiftUI
 struct ClothingListView: View {
     let clothes: [ClothingModel]
     
-    let callback: (String) -> Void
+    let selectCallback: (String) -> Void
+    let deleteCallback: (String) -> Void
     
     var body: some View {
-        VStack {
+        Grid {
             ForEach(clothes, id: \.self) { clothing in
                 ClothingCardView(clothing: clothing, isSelected: true)
-                    .onTapGesture {
-                        callback(clothing.name)
+                    .contextMenu {
+                        VStack {
+                            Button() {
+                                selectCallback(clothing.name)
+                            } label: {
+                                HStack {
+                                    Text("Selecionar")
+                                    Spacer()
+                                    Image(systemName: "checkmark")
+                                }
+                            }
+                            
+                            Button(role: .destructive) {
+                                deleteCallback(clothing.name)
+                            } label: {
+                                HStack {
+                                    Text("Apagar")
+                                    Spacer()
+                                    Image(systemName: "trash")
+                                }
+                            }
+                            
+                        }
                     }
             }
             
@@ -53,6 +75,6 @@ struct ClothingCardView: View {
 }
 
 #Preview {
-    ClothingListView(clothes: [ClothingModel(name: "Camiseta", image: UIImage(systemName: "plus")!.data!)], callback: {_ in })
+    ClothingListView(clothes: [ClothingModel(name: "Camiseta", image: UIImage(systemName: "plus")!.data!)], selectCallback: {_ in }, deleteCallback: {_ in })
         .preferredColorScheme(.dark)
 }

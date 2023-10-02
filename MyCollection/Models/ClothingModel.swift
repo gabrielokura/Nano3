@@ -14,6 +14,14 @@ enum ClothingType {
 struct ClothingModel: Codable, Hashable {
     let name: String
     let image: Data
+    
+    static let upperClothesNames = ["Blazer", "Blouse", "Body", "Dress", "Hat", "Hoodie", "Longsleeve", "Polo", "T-Shirt", "Shirt", "Top"]
+   
+    func isUpper() -> Bool {
+        return  ClothingModel.upperClothesNames.contains { current in
+            current == name
+        }
+    }
 }
 
 extension ClothingModel {

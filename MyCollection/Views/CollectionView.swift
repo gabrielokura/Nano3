@@ -22,10 +22,15 @@ struct CollectionView: View {
                 ProgressView()
                     .padding(20)
             case .loaded(let clothes):
-                ClothingListView(clothes: clothes) { name in
-                    dresserViewModel.saveUserClothing(name, type: type)
-                    dismiss()
-                }
+                ClothingListView(
+                    clothes: clothes,
+                    selectCallback: { name in
+                        dresserViewModel.saveUserClothing(name, type: type)
+                        dismiss()
+                    }) { name in
+//                        dresserViewModel.deleteUserClothing(name)
+                    }
+                
             }
             
         }

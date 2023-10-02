@@ -22,7 +22,18 @@ class CollectionViewModel: ObservableObject {
         state = .loading
         
         let savedClothes = loadFromCache()
-        self.state = .loaded(savedClothes)
+        
+        switch type {
+        case .superiores:
+            self.state = .loaded(savedClothes.filter({ model in
+                return model.isUpper()
+            }))
+        case .inferiores:
+            self.state = .loaded(savedClothes.filter({ model in
+                return !model.isUpper()
+            }))
+        }
+        
     }
     
     func addClothesToTheCloset(image: UIImage, classification: String) {
